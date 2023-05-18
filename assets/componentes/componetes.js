@@ -74,7 +74,7 @@ class ProjetosDev extends HTMLElement {
                 color: #fff;
                 font-size: larger;
                 font-weight: 500;
-                background: #FFC300;
+                background: #186dbc;
                 padding: 1rem 4rem;
                 border-radius: 4rem;
             }
