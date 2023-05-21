@@ -58,7 +58,7 @@ class ProjetosDev extends HTMLElement {
 
             .projeto > img {
                 padding: 2rem 0 1rem 0;
-                width: 20rem;
+                width: 90%;
             }
 
             .projeto > h2 {
@@ -78,6 +78,7 @@ class ProjetosDev extends HTMLElement {
                 padding: 1rem 4rem;
                 border-radius: 4rem;
             }
+
         `;
 
         return style;

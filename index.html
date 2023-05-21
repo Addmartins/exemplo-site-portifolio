@@ -56,7 +56,7 @@
             <div class="habilidades">
                 <div>
                     <span class="skillsPrincipal">
-                        <img src="assets/imagens/skills/3775721-brain-brainstorming-creativity-plan-strategy_108998.svg" alt="" width="70">
+                        <img src="assets/imagens/skills/3775721-brain-brainstorming-creativity-plan-strategy_108998.svg" class="img-fluid" width="100%">
                     </span>
                     <h4>
                         Lógica
@@ -64,7 +64,7 @@
                 </div>
                 <div>
                     <span class="skillsPrincipal">
-                        <img src="assets/imagens/skills/coding_programming_custom_development_icon_220541.svg" alt="" width="70">
+                        <img src="assets/imagens/skills/coding_programming_custom_development_icon_220541.svg" class="img-fluid" width="100%">
                     </span>
                     <h4>
                         Desenvolvimento
@@ -72,7 +72,7 @@
                 </div>
                 <div>
                     <span class="skillsPrincipal">
-                        <img src="assets/imagens/skills/internet_web_coding_development_icon_220425.svg" alt="" width="70">
+                        <img src="assets/imagens/skills/internet_web_coding_development_icon_220425.svg" class="img-fluid" width="100%">
                     </span>
                     <h4>
                         Manutenção
@@ -80,7 +80,7 @@
                 </div>
                 <div>
                     <span class="skillsPrincipal">
-                        <img src="assets/imagens/skills/debug_icon_215819.svg" alt="" width="70">
+                        <img src="assets/imagens/skills/debug_icon_215819.svg" class="img-fluid" width="100%">
                     </span>
                     <h4>
                         Testes
@@ -102,58 +102,70 @@
             <p class="p-3 text-center text-white">
                 Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu .
             </p>
-            <!--feitos com componentização-->                
-            <new-project
+            <!--feitos com componentização-->
+            <div id="caixote">
+                                
+                <new-project class="col-md-5 reduce"
+                    photo = "assets/imagens/11.png"
+                    titulo = "Desenvolvimento-web"
+                    about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
+                
+                >
+                </new-project>
+    
+                <new-project class="col-md-5 reduce"
                 photo = "assets/imagens/11.png"
                 titulo = "Desenvolvimento-web"
                 about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
             
-            >
-            </new-project>
-
-            <new-project
-                photo = "assets/imagens/2.png"
-                titulo = "Desenvolvimento-web"
-                about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
-            
-            >
-            </new-project>
-
-            <new-project
-                photo = "assets/imagens/11.png"
-                titulo = "Desenvolvimento-web"
-                about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
-            
-            >
-            </new-project>
+                >
+    
+                </new-project>
+    
+                <new-project class="col-md-5 reduce"
+                    photo = "assets/imagens/2.png"
+                    titulo = "Desenvolvimento-web"
+                    about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
+                
+                >
+                </new-project>
+    
+                <new-project class="col-md-5 reduce"
+                    photo = "assets/imagens/11.png"
+                    titulo = "Desenvolvimento-web"
+                    about = "Sample text. Click to select the text box. Click again or double click to start editing the text."
+                
+                >
+                </new-project>
+            </div>
         </div>
     </section>
     <!--Meu portfólio-->
     <section class="caixa">
 
         <div id="portfolio" class="container d-flex">
-            <div id="apresentar" class="container-fluid">
+            <div id="apresentar" class="container">
                 <a href="#">
-                    <img src="assets/imagens/ex1.jpg" alt="">
+                    <img src="assets/imagens/ex1.jpg" alt="" class="img-fluid">
                 </a>
                 <a href="#">
-                    <img src="assets/imagens/ex2.jpg" alt="">
+                    <img src="assets/imagens/ex2.jpg" alt="" class="img-fluid">
                 </a>
                 <a href="#">
-                    <img src="assets/imagens/ex3.jpg" alt="">
+                    <img src="assets/imagens/ex3.jpg" alt="" class="img-fluid">
                 </a>
                 <a href="#">
-                    <img src="assets/imagens/ex4.jpg" alt="">
+                    <img src="assets/imagens/ex4.jpg" alt="" class="img-fluid">
                 </a>
                 <a href="#">
-                    <img src="assets/imagens/ex5.jpg" alt="">
+                    <img src="assets/imagens/ex5.jpg" alt="" class="img-fluid">
                 </a>
 
                 <div class="projetoPortfolio">
                     <h1>Meu Portfólio</h1>
 
                     <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in.
                     </p>
                     <a href="#">Saiba mais</a>
                 </div>
@@ -183,9 +195,7 @@
                 </h1>
                 <h4>Deixe seu contato</h4>
 
-                <form id="solicitar" action="https://formsubmit.co/addhyeldev@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://yourdomain.co/assets/agradecimento.html.html">
-
+                <form id="solicitar">
                     
                     <fieldset id="formulario">
                         <div class="container-fluid">

@@ -26,10 +26,11 @@ a.nav-link {
     font-weight: 400;
     color: #000;
 }
-/**/
+/*Principal*/
 section.caixa {
     display: flex;
     flex-direction: column;
+    background-color: #001D3D;
 }
 
 section.principal {
@@ -61,7 +62,7 @@ section.caixa .habilidades > div > .skillsPrincipal {
     display: flex;
     align-items: center;
     width: 5rem;
-    padding: 1rem;
+    padding: 1.2rem;
     background-color: #186dbc;
     border-radius: 100%;
 }
@@ -72,6 +73,11 @@ section.caixa .habilidades > div > h4 {
     color: #001D3D;
 }
 
+#caixaProjetos {
+    padding-bottom: 3rem;
+    background-color: #186dbc;
+}
+
 #caixaProjetos .container {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +85,15 @@ section.caixa .habilidades > div > h4 {
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background: #186dbc;
+}
+
+#caixote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
 }
 
 
@@ -92,18 +106,14 @@ section.caixa .habilidades > div > h4 {
 
 #apresentar {
     display: flex;
-    width: 15rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 4rem;
     padding-top: 5rem;
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
-    background-color: #186dbc;
 }
 
-#apresentar > a {
-    background-color: #000;
-}
 
 #apresentar > a > img {
     width: 20rem;
@@ -123,10 +133,11 @@ section.caixa .habilidades > div > h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: #fff;
     padding: 2rem;
     width: 20rem;
-    height: 22rem;
+    height: 20rem;
     border-radius: 2rem;
 }
 
@@ -143,6 +154,7 @@ section.caixa .habilidades > div > h4 {
     padding: 1rem 4rem;
     border-radius: 4rem;
 }
+
 
 #portfolio .projetoPortfolio > a:hover {
     background: #fff;
@@ -282,4 +294,53 @@ input {
     background: #186dbc;
     font-size: large;
     font-weight: 500
+}
+
+@media (min-width: 500px) {
+    section.caixa .habilidades > div  {
+        width: 12rem;
+    }
+
+    section.caixa .habilidades > div > .skillsPrincipal {
+        width: 7rem;
+    }
+}
+
+@media (min-width: 777px) {
+    section.caixa .habilidades {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    section.caixa .habilidades > div  {
+        width: 10rem;
+    }
+}
+
+@media (min-width: 1000px){
+    #apresentar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.caixa .habilidades > div  {
+        width: 15rem;
+    }
+
+    section.caixa .habilidades > div > h4 {
+        font-size: larger;
+    }
+}
+
+@media (min-width: 1401px) {
+    #caixote {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    #caixote > .reduce {
+        width: 300px;
+    }
 }
